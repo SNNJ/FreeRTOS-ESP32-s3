@@ -1,7 +1,3 @@
-# FreeRTOS-ESP32-s3
-This project implements the embedded firmware for a **simulated satellite system** built on the ESP32 platform using the CADSE v5 board. The firmware controls multiple sensors, user interfaces, and communication protocols while supporting real-time operations via **FreeRTOS**.
-
-```markdown
 # 🚀 CADSE Satellite Firmware (ESP32)
 
 This project implements the embedded firmware for a **simulated satellite system** built on the ESP32 platform using the CADSE v5 board. The firmware controls multiple sensors, user interfaces, and communication protocols while supporting real-time operations via **FreeRTOS**.
@@ -34,17 +30,19 @@ This project implements the embedded firmware for a **simulated satellite system
 
 ## 📂 Project Structure
 
-```
-📁 src/
-├── modes/                # Mode-specific behavior
-├── sensors/              # IMU, BME280, voltage sensing
-├── hardware/             # Touch, LED, buzzer, storage
-├── main.cpp              # System entry point and task setup
-📁 include/
-├── *.h                   # All public header files (Doxygen-annotated)
-```
+```plaintext
+📁 SE2_2024_M2_Siamak_Najafinia/
+├── 📁 src/               → Main source files
+│   ├── modes/           → Mode-specific logic (mode1.cpp ... mode5.cpp)
+│   ├── sensors/         → IMU, BME280, voltage readers
+│   └── hardware/        → Buzzer, LEDs, buttons, storage
+├── 📁 include/           → Header files (Doxygen-documented)
+├── 📁 lib/               → Optional libraries
+├── 📁 test/              → Unit tests (if any)
+├── 📁 docs/              → Doxygen HTML output
+├── Doxyfile             → Configuration file for generating docs
+├── README.md            → Project documentation file
 
----
 
 ## 🔧 Requirements
 
